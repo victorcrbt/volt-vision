@@ -25,16 +25,7 @@ module.exports = {
     // Import
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
-    'import/extensions': [
-      'error',
-      {
-        tsx: 'never',
-        jsx: 'never',
-        ts: 'never',
-        js: 'never',
-        json: 'always',
-      },
-    ],
+    'import/extensions': 'off',
 
     // React
     'react/prop-types': 'off',
@@ -54,5 +45,15 @@ module.exports = {
     // TypeScript
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/object-curly-spacing': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alias: {
+          map: [['@self', './src']],
+          extensions: ['.ts', '.tsx'],
+        },
+      },
+    },
   },
 };

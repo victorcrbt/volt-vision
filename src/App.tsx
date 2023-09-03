@@ -1,9 +1,11 @@
 import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
+import { SafeAreaView } from 'react-native';
+
+import { HelloWorld } from '@self/shared/presentation/components/atoms/hello-world';
 
 const App = (): JSX.Element => (
   <SafeAreaView>
-    <Text>VoltVision</Text>
+    <HelloWorld />
   </SafeAreaView>
 );
 
