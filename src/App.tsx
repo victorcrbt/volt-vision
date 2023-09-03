@@ -1,12 +1,10 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
 
-function App(): JSX.Element {
-  return (
-    <SafeAreaView>
-      <Text>VoltVision</Text>
-    </SafeAreaView>
-  );
-}
+const App = (): JSX.Element => (
+  <SafeAreaView>
+    <Text>VoltVision</Text>
+  </SafeAreaView>
+);
 
 export default App;
