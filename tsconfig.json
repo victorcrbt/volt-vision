@@ -1,3 +1,14 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2015", "ES2017"],
+    "jsx": "react",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    // "types": ["@types/styled-components-react-native"],
+    "baseUrl": "./src",
+    "paths": {
+      "@self/*": ["./*"]
+    }
+  }
 }
